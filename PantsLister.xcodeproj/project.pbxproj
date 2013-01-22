@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C0C2A649BAD4B91A852D1DA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8937F08BCE45408AB702D638 /* libPods.a */; };
+		3D2D52E6160B42F39FEC5AD0 /* libPods-PantsListerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1B6216CFE43CDA6AA32C8 /* libPods-PantsListerTests.a */; };
+		589F00CA4E15D7C3AE2D1D45 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F08EF36F07D57C1DE4DDB /* Default.png */; };
+		589F02DB739C61EB43A31BA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F049FEECEB71B30D54317 /* CoreGraphics.framework */; };
+		589F02F573E79BE7069D5D93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F02A7D2908A51AACE80A4 /* UIKit.framework */; };
+		589F033F8D50C3C286F3B52E /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */; };
+		589F04FC574BAFD595C2F726 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F056B32881AAC461D40A6 /* main.m */; };
+		589F054CD14E1FAAB2A075EE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F0683D49F5224A77B20AF /* Default-568h@2x.png */; };
+		589F06C76358C4025D7902D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F02A7D2908A51AACE80A4 /* UIKit.framework */; };
+		589F074C511082332858C7EE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F085F530C43431A834DAB /* SenTestingKit.framework */; };
+		589F080AD894C6EB088C66F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589F0D9F041E68D55D730D03 /* InfoPlist.strings */; };
+		589F08FEB72CC3E419CCA2B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589F0F41E38DFA1796864544 /* InfoPlist.strings */; };
+		589F0A15B57F412A29C5296A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F076485F2A67878F505A7 /* Foundation.framework */; };
+		589F0AD737D46C1453523A41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F076485F2A67878F505A7 /* Foundation.framework */; };
+		589F0D0B65D67934A4095038 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F0AF11B93734FF5B7114C /* Default@2x.png */; };
+		589F0F8487385526ABE71B41 /* PantsListerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F002EA4C679FD433EE140 /* PantsListerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		589F0B7E4C072D59D73EFCD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589F08A4D336F8D139775945 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589F09B24808B6B4D8817525;
+			remoteInfo = PantsLister;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20947EB6430D44C6A86D19C2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		2B94F8AA9905405A836B7C14 /* Pods-PantsListerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantsListerTests.xcconfig"; path = "Pods/Pods-PantsListerTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		589F002EA4C679FD433EE140 /* PantsListerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PantsListerTests.m; sourceTree = "<group>"; };
+		589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAppDelegate.m; sourceTree = "<group>"; };
+		589F0171F1D42C3DF6703909 /* PantsLister-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "PantsLister-Info.plist"; sourceTree = "<group>"; };
+		589F02A7D2908A51AACE80A4 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		589F049FEECEB71B30D54317 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		589F056B32881AAC461D40A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		589F05B83970CAA27F1E1287 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		589F064D555C2DAC9801F921 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		589F0683D49F5224A77B20AF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		589F076485F2A67878F505A7 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		589F08062E69E6186CECC1EC /* PLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAppDelegate.h; sourceTree = "<group>"; };
+		589F0814C48CD2837E03262F /* PantsLister-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PantsLister-Prefix.pch"; sourceTree = "<group>"; };
+		589F085F530C43431A834DAB /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		589F08EF36F07D57C1DE4DDB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		589F0AF11B93734FF5B7114C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		589F0B485825BB4E2C288C54 /* PantsLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PantsLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		589F0DFBB0EDE18BCF7D1385 /* PantsListerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "PantsListerTests-Info.plist"; sourceTree = "<group>"; };
+		589F0E5E1F1B67BE04020B3F /* PantsListerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PantsListerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8937F08BCE45408AB702D638 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA1B6216CFE43CDA6AA32C8 /* libPods-PantsListerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PantsListerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		589F050B2519093118CDF1A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589F02F573E79BE7069D5D93 /* UIKit.framework in Frameworks */,
+				589F0AD737D46C1453523A41 /* Foundation.framework in Frameworks */,
+				589F02DB739C61EB43A31BA9 /* CoreGraphics.framework in Frameworks */,
+				3C0C2A649BAD4B91A852D1DA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589F0CF0DF97185155396E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589F074C511082332858C7EE /* SenTestingKit.framework in Frameworks */,
+				589F06C76358C4025D7902D0 /* UIKit.framework in Frameworks */,
+				589F0A15B57F412A29C5296A /* Foundation.framework in Frameworks */,
+				3D2D52E6160B42F39FEC5AD0 /* libPods-PantsListerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		589F018F67368CC198AE977A /* PantsListerTests */ = {
+			isa = PBXGroup;
+			children = (
+				589F05A84F71A329D4B17F87 /* Supporting Files */,
+				589F002EA4C679FD433EE140 /* PantsListerTests.m */,
+			);
+			path = PantsListerTests;
+			sourceTree = "<group>";
+		};
+		589F05A84F71A329D4B17F87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				589F0DFBB0EDE18BCF7D1385 /* PantsListerTests-Info.plist */,
+				589F0D9F041E68D55D730D03 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		589F078A86B0252CC1A5EEFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				589F0171F1D42C3DF6703909 /* PantsLister-Info.plist */,
+				589F0F41E38DFA1796864544 /* InfoPlist.strings */,
+				589F056B32881AAC461D40A6 /* main.m */,
+				589F0814C48CD2837E03262F /* PantsLister-Prefix.pch */,
+				589F08EF36F07D57C1DE4DDB /* Default.png */,
+				589F0AF11B93734FF5B7114C /* Default@2x.png */,
+				589F0683D49F5224A77B20AF /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		589F086C614409E364F24D4C /* PantsLister */ = {
+			isa = PBXGroup;
+			children = (
+				589F078A86B0252CC1A5EEFE /* Supporting Files */,
+				589F08062E69E6186CECC1EC /* PLAppDelegate.h */,
+				589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */,
+			);
+			path = PantsLister;
+			sourceTree = "<group>";
+		};
+		589F086C80CBB6E29A10001B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				589F0B485825BB4E2C288C54 /* PantsLister.app */,
+				589F0E5E1F1B67BE04020B3F /* PantsListerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		589F0C924BE94023D9F26DC6 = {
+			isa = PBXGroup;
+			children = (
+				589F086C80CBB6E29A10001B /* Products */,
+				589F0D58F24FFE0485C0A92A /* Frameworks */,
+				589F086C614409E364F24D4C /* PantsLister */,
+				589F018F67368CC198AE977A /* PantsListerTests */,
+				20947EB6430D44C6A86D19C2 /* Pods.xcconfig */,
+				2B94F8AA9905405A836B7C14 /* Pods-PantsListerTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		589F0D58F24FFE0485C0A92A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				589F02A7D2908A51AACE80A4 /* UIKit.framework */,
+				589F076485F2A67878F505A7 /* Foundation.framework */,
+				589F049FEECEB71B30D54317 /* CoreGraphics.framework */,
+				589F085F530C43431A834DAB /* SenTestingKit.framework */,
+				8937F08BCE45408AB702D638 /* libPods.a */,
+				EFA1B6216CFE43CDA6AA32C8 /* libPods-PantsListerTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		589F028C5835B3A010E154CE /* PantsListerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589F0F3577E5A68D316961E8 /* Build configuration list for PBXNativeTarget "PantsListerTests" */;
+			buildPhases = (
+				589F07661B23A83FE6627360 /* Sources */,
+				589F0CF0DF97185155396E8F /* Frameworks */,
+				589F0BB75A4A72DF0F1CD209 /* Resources */,
+				589F08E2137D18106E1CA002 /* ShellScript */,
+				8C0880E923B74BEF9EF47902 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				589F0C210031340176115ED7 /* PBXTargetDependency */,
+			);
+			name = PantsListerTests;
+			productName = PantsListerTests;
+			productReference = 589F0E5E1F1B67BE04020B3F /* PantsListerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		589F09B24808B6B4D8817525 /* PantsLister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589F02FB6B0F371A41585E61 /* Build configuration list for PBXNativeTarget "PantsLister" */;
+			buildPhases = (
+				589F00A1DA865D2104E3CFFA /* Sources */,
+				589F050B2519093118CDF1A1 /* Frameworks */,
+				589F0443246D041FCB056E5A /* Resources */,
+				9575AD506020486C90F09309 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PantsLister;
+			productName = PantsLister;
+			productReference = 589F0B485825BB4E2C288C54 /* PantsLister.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		589F08A4D336F8D139775945 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 589F0D6A68C70FAAF7C10007 /* Build configuration list for PBXProject "PantsLister" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 589F0C924BE94023D9F26DC6;
+			productRefGroup = 589F086C80CBB6E29A10001B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				589F09B24808B6B4D8817525 /* PantsLister */,
+				589F028C5835B3A010E154CE /* PantsListerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		589F0443246D041FCB056E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589F08FEB72CC3E419CCA2B7 /* InfoPlist.strings in Resources */,
+				589F00CA4E15D7C3AE2D1D45 /* Default.png in Resources */,
+				589F0D0B65D67934A4095038 /* Default@2x.png in Resources */,
+				589F054CD14E1FAAB2A075EE /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589F0BB75A4A72DF0F1CD209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589F080AD894C6EB088C66F0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		589F08E2137D18106E1CA002 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		8C0880E923B74BEF9EF47902 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-PantsListerTests-resources.sh\"\n";
+		};
+		9575AD506020486C90F09309 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		589F00A1DA865D2104E3CFFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589F04FC574BAFD595C2F726 /* main.m in Sources */,
+				589F033F8D50C3C286F3B52E /* PLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589F07661B23A83FE6627360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589F0F8487385526ABE71B41 /* PantsListerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		589F0C210031340176115ED7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 589F09B24808B6B4D8817525 /* PantsLister */;
+			targetProxy = 589F0B7E4C072D59D73EFCD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		589F0D9F041E68D55D730D03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589F05B83970CAA27F1E1287 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		589F0F41E38DFA1796864544 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589F064D555C2DAC9801F921 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		589F02392343B50174640414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		589F06A497106719B4326C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20947EB6430D44C6A86D19C2 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PantsLister/PantsLister-Prefix.pch";
+				INFOPLIST_FILE = "PantsLister/PantsLister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		589F06D4B839B3FC94A76A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		589F086DE4938E15B4A35133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B94F8AA9905405A836B7C14 /* Pods-PantsListerTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PantsLister.app/PantsLister";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PantsLister/PantsLister-Prefix.pch";
+				INFOPLIST_FILE = "PantsListerTests/PantsListerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		589F0B4CEFFAF0A230CFAAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20947EB6430D44C6A86D19C2 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PantsLister/PantsLister-Prefix.pch";
+				INFOPLIST_FILE = "PantsLister/PantsLister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		589F0F75CF92BB9115007968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B94F8AA9905405A836B7C14 /* Pods-PantsListerTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PantsLister.app/PantsLister";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PantsLister/PantsLister-Prefix.pch";
+				INFOPLIST_FILE = "PantsListerTests/PantsListerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		589F02FB6B0F371A41585E61 /* Build configuration list for PBXNativeTarget "PantsLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589F0B4CEFFAF0A230CFAAA0 /* Release */,
+				589F06A497106719B4326C82 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589F0D6A68C70FAAF7C10007 /* Build configuration list for PBXProject "PantsLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589F02392343B50174640414 /* Release */,
+				589F06D4B839B3FC94A76A7D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589F0F3577E5A68D316961E8 /* Build configuration list for PBXNativeTarget "PantsListerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589F086DE4938E15B4A35133 /* Release */,
+				589F0F75CF92BB9115007968 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 589F08A4D336F8D139775945 /* Project object */;
+}
