@@ -5,9 +5,6 @@
 
 #import "PantsTableViewController.h"
 
-
-@implementation PantsTableViewController {
-
-}
+@implementation PantsTableViewController
 
 @end
