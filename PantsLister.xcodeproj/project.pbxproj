@@ -19,7 +19,9 @@
 		589F074C511082332858C7EE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F085F530C43431A834DAB /* SenTestingKit.framework */; };
 		589F080AD894C6EB088C66F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589F0D9F041E68D55D730D03 /* InfoPlist.strings */; };
 		589F08FEB72CC3E419CCA2B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589F0F41E38DFA1796864544 /* InfoPlist.strings */; };
+		589F09DD1E73DEEE8A51D7E6 /* PantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F077DFD63CA431B32D20F /* PantsTableViewController.m */; };
 		589F0A15B57F412A29C5296A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F076485F2A67878F505A7 /* Foundation.framework */; };
+		589F0A34013E19FDAFC78661 /* PantsTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0B8BE17EEA257B391CCD /* PantsTableViewControllerSpec.m */; };
 		589F0AD737D46C1453523A41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F076485F2A67878F505A7 /* Foundation.framework */; };
 		589F0D0B65D67934A4095038 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F0AF11B93734FF5B7114C /* Default@2x.png */; };
 		589F0F8487385526ABE71B41 /* PantsListerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F002EA4C679FD433EE140 /* PantsListerTests.m */; };
@@ -39,6 +41,7 @@
 		20947EB6430D44C6A86D19C2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		2B94F8AA9905405A836B7C14 /* Pods-PantsListerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantsListerTests.xcconfig"; path = "Pods/Pods-PantsListerTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		589F002EA4C679FD433EE140 /* PantsListerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PantsListerTests.m; sourceTree = "<group>"; };
+		589F00490A73DE663FD61330 /* PantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PantsTableViewController.h; sourceTree = "<group>"; };
 		589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAppDelegate.m; sourceTree = "<group>"; };
 		589F0171F1D42C3DF6703909 /* PantsLister-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "PantsLister-Info.plist"; sourceTree = "<group>"; };
 		589F02A7D2908A51AACE80A4 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -48,12 +51,14 @@
 		589F064D555C2DAC9801F921 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		589F0683D49F5224A77B20AF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		589F076485F2A67878F505A7 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		589F077DFD63CA431B32D20F /* PantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PantsTableViewController.m; sourceTree = "<group>"; };
 		589F08062E69E6186CECC1EC /* PLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAppDelegate.h; sourceTree = "<group>"; };
 		589F0814C48CD2837E03262F /* PantsLister-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PantsLister-Prefix.pch"; sourceTree = "<group>"; };
 		589F085F530C43431A834DAB /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		589F08EF36F07D57C1DE4DDB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		589F0AF11B93734FF5B7114C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		589F0B485825BB4E2C288C54 /* PantsLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PantsLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		589F0B8BE17EEA257B391CCD /* PantsTableViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PantsTableViewControllerSpec.m; sourceTree = "<group>"; };
 		589F0DFBB0EDE18BCF7D1385 /* PantsListerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "PantsListerTests-Info.plist"; sourceTree = "<group>"; };
 		589F0E5E1F1B67BE04020B3F /* PantsListerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PantsListerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8937F08BCE45408AB702D638 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +96,7 @@
 			children = (
 				589F05A84F71A329D4B17F87 /* Supporting Files */,
 				589F002EA4C679FD433EE140 /* PantsListerTests.m */,
+				589F0B8BE17EEA257B391CCD /* PantsTableViewControllerSpec.m */,
 			);
 			path = PantsListerTests;
 			sourceTree = "<group>";
@@ -124,6 +130,8 @@
 				589F078A86B0252CC1A5EEFE /* Supporting Files */,
 				589F08062E69E6186CECC1EC /* PLAppDelegate.h */,
 				589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */,
+				589F077DFD63CA431B32D20F /* PantsTableViewController.m */,
+				589F00490A73DE663FD61330 /* PantsTableViewController.h */,
 			);
 			path = PantsLister;
 			sourceTree = "<group>";
@@ -299,6 +307,7 @@
 			files = (
 				589F04FC574BAFD595C2F726 /* main.m in Sources */,
 				589F033F8D50C3C286F3B52E /* PLAppDelegate.m in Sources */,
+				589F09DD1E73DEEE8A51D7E6 /* PantsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				589F0F8487385526ABE71B41 /* PantsListerTests.m in Sources */,
+				589F0A34013E19FDAFC78661 /* PantsTableViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
