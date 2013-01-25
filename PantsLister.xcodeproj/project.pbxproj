@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		3C0C2A649BAD4B91A852D1DA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8937F08BCE45408AB702D638 /* libPods.a */; };
 		3D2D52E6160B42F39FEC5AD0 /* libPods-PantsListerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1B6216CFE43CDA6AA32C8 /* libPods-PantsListerTests.a */; };
+		589F00A7FFD825AEBA1700E9 /* Pants.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0326D1CB5B246EFC90C9 /* Pants.m */; };
 		589F00CA4E15D7C3AE2D1D45 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F08EF36F07D57C1DE4DDB /* Default.png */; };
 		589F02DB739C61EB43A31BA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F049FEECEB71B30D54317 /* CoreGraphics.framework */; };
 		589F02F573E79BE7069D5D93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F02A7D2908A51AACE80A4 /* UIKit.framework */; };
 		589F033F8D50C3C286F3B52E /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */; };
+		589F039877065A1336ACAE95 /* Pants.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0326D1CB5B246EFC90C9 /* Pants.m */; };
 		589F04FC574BAFD595C2F726 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F056B32881AAC461D40A6 /* main.m */; };
 		589F054CD14E1FAAB2A075EE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F0683D49F5224A77B20AF /* Default-568h@2x.png */; };
 		589F06C76358C4025D7902D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F02A7D2908A51AACE80A4 /* UIKit.framework */; };
@@ -25,6 +27,10 @@
 		589F0AD737D46C1453523A41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F076485F2A67878F505A7 /* Foundation.framework */; };
 		589F0D0B65D67934A4095038 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F0AF11B93734FF5B7114C /* Default@2x.png */; };
 		589F0F8487385526ABE71B41 /* PantsListerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F002EA4C679FD433EE140 /* PantsListerTests.m */; };
+		96B7CB2216B3009C005BB520 /* PantsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B7CB2116B3009C005BB520 /* PantsTableViewCell.m */; };
+		96B7CB2316B3009C005BB520 /* PantsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B7CB2116B3009C005BB520 /* PantsTableViewCell.m */; };
+		96B7CB2616B300AD005BB520 /* PantsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B7CB2516B300AD005BB520 /* PantsTableViewCell.xib */; };
+		96B7CB2716B300AD005BB520 /* PantsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B7CB2516B300AD005BB520 /* PantsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +50,9 @@
 		589F00490A73DE663FD61330 /* PantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PantsTableViewController.h; sourceTree = "<group>"; };
 		589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAppDelegate.m; sourceTree = "<group>"; };
 		589F0171F1D42C3DF6703909 /* PantsLister-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "PantsLister-Info.plist"; sourceTree = "<group>"; };
+		589F01CAFFCF7A33A7AF02E2 /* Pants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pants.h; sourceTree = "<group>"; };
 		589F02A7D2908A51AACE80A4 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		589F0326D1CB5B246EFC90C9 /* Pants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pants.m; sourceTree = "<group>"; };
 		589F049FEECEB71B30D54317 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		589F056B32881AAC461D40A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		589F05B83970CAA27F1E1287 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -62,6 +70,9 @@
 		589F0DFBB0EDE18BCF7D1385 /* PantsListerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "PantsListerTests-Info.plist"; sourceTree = "<group>"; };
 		589F0E5E1F1B67BE04020B3F /* PantsListerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PantsListerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8937F08BCE45408AB702D638 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B7CB2016B3009C005BB520 /* PantsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PantsTableViewCell.h; sourceTree = "<group>"; };
+		96B7CB2116B3009C005BB520 /* PantsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PantsTableViewCell.m; sourceTree = "<group>"; };
+		96B7CB2516B300AD005BB520 /* PantsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PantsTableViewCell.xib; sourceTree = "<group>"; };
 		EFA1B6216CFE43CDA6AA32C8 /* libPods-PantsListerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PantsListerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +143,11 @@
 				589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */,
 				589F077DFD63CA431B32D20F /* PantsTableViewController.m */,
 				589F00490A73DE663FD61330 /* PantsTableViewController.h */,
+				589F0326D1CB5B246EFC90C9 /* Pants.m */,
+				589F01CAFFCF7A33A7AF02E2 /* Pants.h */,
+				96B7CB2016B3009C005BB520 /* PantsTableViewCell.h */,
+				96B7CB2116B3009C005BB520 /* PantsTableViewCell.m */,
+				96B7CB2516B300AD005BB520 /* PantsTableViewCell.xib */,
 			);
 			path = PantsLister;
 			sourceTree = "<group>";
@@ -243,6 +259,7 @@
 				589F00CA4E15D7C3AE2D1D45 /* Default.png in Resources */,
 				589F0D0B65D67934A4095038 /* Default@2x.png in Resources */,
 				589F054CD14E1FAAB2A075EE /* Default-568h@2x.png in Resources */,
+				96B7CB2616B300AD005BB520 /* PantsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				589F080AD894C6EB088C66F0 /* InfoPlist.strings in Resources */,
+				96B7CB2716B300AD005BB520 /* PantsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +326,8 @@
 				589F04FC574BAFD595C2F726 /* main.m in Sources */,
 				589F033F8D50C3C286F3B52E /* PLAppDelegate.m in Sources */,
 				589F09DD1E73DEEE8A51D7E6 /* PantsTableViewController.m in Sources */,
+				589F00A7FFD825AEBA1700E9 /* Pants.m in Sources */,
+				96B7CB2216B3009C005BB520 /* PantsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +337,8 @@
 			files = (
 				589F0F8487385526ABE71B41 /* PantsListerTests.m in Sources */,
 				589F0A34013E19FDAFC78661 /* PantsTableViewControllerSpec.m in Sources */,
+				589F039877065A1336ACAE95 /* Pants.m in Sources */,
+				96B7CB2316B3009C005BB520 /* PantsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
