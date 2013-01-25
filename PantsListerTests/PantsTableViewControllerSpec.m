@@ -54,23 +54,17 @@ describe(@"PantsTableViewController", ^{
 
         describe(@"should make a cell for each pants", ^{
 
-            __block UITableViewCell *cell;
-
-            beforeEach(^{
-                cell = [PantsTableViewCell nullMock];
+            it(@"should make a pajamas row", ^{
+                PantsTableViewCell *cell = [PantsTableViewCell nullMock];
                 [PantsTableViewCell stub:@selector(alloc) andReturn:cell];
                 [cell stub:@selector(initWithType:) andReturn:cell];
 
                 NSArray *pants = @[makePants(@"pajama"), makePants(@"jeggings"), makePants(@"jeans")];
                 [controller stub:@selector(pants) andReturn:pants];
-            });
 
-            it(@"should make a pajamas row", ^{
                 [[cell should] receive:@selector(initWithType:) withArguments:@"pajama"];
 
-                UITableViewCell *actualCell = [controller tableView:nil cellForRowAtIndexPath:rowInFirstSection(0)];
-
-                [[actualCell should] equal:cell];
+                [controller tableView:nil cellForRowAtIndexPath:rowInFirstSection(0)];
             });
 
         });

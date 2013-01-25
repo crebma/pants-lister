@@ -27,7 +27,11 @@
 }
 
 - (id)initWithType:(NSString *)type {
-    return nil;
+    self = [super init];
+    if (self) {
+
+    }
+    return self;
 }
 
 @end
