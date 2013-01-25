@@ -3,14 +3,18 @@
 //
 
 #import "Kiwi.h"
-#import "PantsTableViewCell.h"
+#import "PLPantsTableViewCell.h"
 
 SPEC_BEGIN(PantsTableViewCellSpec)
+
+PLPantsTableViewCellSpec
+
+PLPantsTableViewCellSpec
 
 describe(@"PantsTableView", ^{
 
     it(@"should set the label text to the type it is inited with", ^{
-        PantsTableViewCell *cell = [[PantsTableViewCell alloc] init];
+        PLPantsTableViewCell *cell = [[PLPantsTableViewCell alloc] init];
         id label = [UILabel nullMock];
         [cell stub:@selector(pantsTypeLabel) andReturn:label];
         NSString *type = @"a type";

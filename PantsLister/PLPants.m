@@ -3,10 +3,10 @@
 //
 
 
-#import "Pants.h"
+#import "PLPants.h"
 
 
-@implementation Pants
+@implementation PLPants
 
 - (id)initWithType:(NSString *)type {
     self = [super init];

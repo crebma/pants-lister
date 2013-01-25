@@ -3,26 +3,26 @@
 //
 
 
-#import "PantsTableViewController.h"
-#import "PantsTableViewCell.h"
-#import "Pants.h"
+#import "PLPantsTableViewController.h"
+#import "PLPantsTableViewCell.h"
+#import "PLPants.h"
 
-@interface PantsTableViewController ()
+@interface PLPantsTableViewController ()
 
 @property (strong, nonatomic) NSArray *pants;
 
 @end
 
-@implementation PantsTableViewController
+@implementation PLPantsTableViewController
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.pants count];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Pants *pants = [self.pants objectAtIndex:indexPath.row];
+    PLPants *pants = [self.pants objectAtIndex:indexPath.row];
 
-    return [[PantsTableViewCell alloc] initWithType: pants.type];
+    return [[PLPantsTableViewCell alloc] initWithType: pants.type];
 }
 
 @end

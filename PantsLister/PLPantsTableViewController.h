@@ -5,6 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PantsTableViewController : UITableViewController
+@interface PLPantsTableViewController : UITableViewController
 
 @end

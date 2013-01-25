@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Pants : NSObject
+@interface PLPants : NSObject
 
 @property(nonatomic, strong) NSString *type;
 

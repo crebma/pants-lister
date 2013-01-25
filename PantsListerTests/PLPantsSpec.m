@@ -4,16 +4,20 @@
 
 
 #import "Kiwi.h"
-#import "Pants.h"
+#import "PLPants.h"
 
 SPEC_BEGIN(PantsSpec)
 
-describe(@"Pants", ^{
+PLPantsSpec
+
+PLPantsSpec
+
+describe(@"PLPants", ^{
 
     it(@"holds on to the type it is inited with", ^{
         NSString *type = @"the type!";
 
-        Pants *pants = [[Pants alloc] initWithType:type];
+        PLPants *pants = [[PLPants alloc] initWithType:type];
 
         [[[pants type] should] equal:type];
     });

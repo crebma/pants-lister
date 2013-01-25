@@ -1,14 +1,14 @@
 //
-//  PantsTableViewCell.m
+//  PLPantsTableViewCell.m
 //  PantsLister
 //
 //  Created by Amber Conville on 1/25/13.
 //
 //
 
-#import "PantsTableViewCell.h"
+#import "PLPantsTableViewCell.h"
 
-@implementation PantsTableViewCell
+@implementation PLPantsTableViewCell
 
 - (id)initWithType:(NSString *)type {
     self = [super init];

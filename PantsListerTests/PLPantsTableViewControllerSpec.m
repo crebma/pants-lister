@@ -3,11 +3,11 @@
 //
 
 #import "Kiwi.h"
-#import "PantsTableViewController.h"
-#import "Pants.h"
-#import "PantsTableViewCell.h"
+#import "PLPantsTableViewController.h"
+#import "PLPants.h"
+#import "PLPantsTableViewCell.h"
 
-@interface PantsTableViewController ()
+@interface PLPantsTableViewController ()
 
 @property (strong, nonatomic) NSArray *pants;
 
@@ -15,20 +15,24 @@
 
 SPEC_BEGIN(PantsTableViewControllerSpec)
 
-Pants *(^makePants)(NSString *) = ^(NSString *type) {
-    return [[Pants alloc] initWithType:type];
+PLPantsTableViewControllerSpec
+
+PLPantsTableViewControllerSpec
+
+PLPants *(^makePants)(NSString *) = ^(NSString *type) {
+    return [[PLPants alloc] initWithType:type];
 };
 
 NSIndexPath *(^rowInFirstSection)(int) = ^(int row) {
     return [NSIndexPath indexPathForRow:row inSection:0];
 };
 
-describe(@"PantsTableViewController", ^{
+describe(@"PLPantsTableViewController", ^{
 
-    __block PantsTableViewController *controller;
+    __block PLPantsTableViewController *controller;
 
     beforeEach(^{
-        controller = [[PantsTableViewController alloc] init];
+        controller = [[PLPantsTableViewController alloc] init];
     });
 
     it(@"is a UITableViewController", ^{
@@ -54,14 +58,14 @@ describe(@"PantsTableViewController", ^{
 
         pending(@"should make a cell for each pants", ^{
 
-            __block PantsTableViewCell *cell;
+            __block PLPantsTableViewCell *cell;
 
             beforeEach(^{
                 NSArray *pants = @[makePants(@"pajama"), makePants(@"jeggings"), makePants(@"jeans")];
                 [controller stub:@selector(pants) andReturn:pants];
 
-                cell = [PantsTableViewCell nullMock];
-                [PantsTableViewCell stub:@selector(alloc) andReturn:cell];
+                cell = [PLPantsTableViewCell nullMock];
+                [PLPantsTableViewCell stub:@selector(alloc) andReturn:cell];
                 [cell stub:@selector(initWithType:) andReturn:cell];
             });
 
