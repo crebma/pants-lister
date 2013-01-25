@@ -6,8 +6,9 @@
 #import "PLPantsService.h"
 
 
-@implementation PLPantsService {
+@implementation PLPantsService
 
+- (void)getPantsWithSuccess:(void (^)(NSArray *))successBlock andFailure:(void (^)())failureBlock {
 }
 
 @end

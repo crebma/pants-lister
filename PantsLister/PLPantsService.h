@@ -7,4 +7,7 @@
 
 
 @interface PLPantsService : NSObject
+
+- (void)getPantsWithSuccess:(void (^)(NSArray *))successBlock andFailure:(void (^)())failureBlock;
+
 @end

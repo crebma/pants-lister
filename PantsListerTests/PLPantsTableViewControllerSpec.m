@@ -11,6 +11,7 @@
 @interface PLPantsTableViewController ()
 
 @property (strong, nonatomic) NSArray *pants;
+@property (strong, nonatomic) PLPantsService *pantsService;
 
 @end
 
@@ -53,7 +54,7 @@ describe(@"PLPantsTableViewController", ^{
             [[theValue(numberOfSections) should] equal:theValue(1)];
         });
 
-        describe(@"should make a cell for each pants", ^{
+        describe(@"making a cell for each pants", ^{
 
             __block PLPantsTableViewCell *cell;
             __block UITableView *tableView;
@@ -112,16 +113,77 @@ describe(@"PLPantsTableViewController", ^{
 
     });
 
-    pending(@"should get data on viewDidAppear", ^{
+    context(@"viewDidAppear", ^{
+
+        __block id pantsService;
+
+        beforeEach(^{
+            pantsService = [PLPantsService nullMock];
+            [controller stub:@selector(pantsService) andReturn:pantsService];
+        });
 
         it(@"should get data from the service", ^{
-            id pantsService = [PLPantsService nullMock];
-            [controller stub:@selector(pantsService) andReturn:pantsService];
+            [[pantsService should] receive:@selector(getPantsWithSuccess:andFailure:)];
 
             [controller viewDidAppear:NO];
-
-            [[pantsService should] receive:@selector(getPantsWithSuccess:andFailure:)];
         });
+
+        describe(@"the success callback", ^{
+
+            __block void(^successBlock)(NSArray *);
+            __block NSArray *pants;
+            __block UITableView *tableView;
+
+            beforeEach(^{
+                tableView = [UITableView nullMock];
+                [controller stub:@selector(tableView) andReturn:tableView];
+                pants = @[makePants(@"pajama"), makePants(@"jeggings"), makePants(@"jeans")];
+                KWCaptureSpy *spy = [pantsService captureArgument:@selector(getPantsWithSuccess:andFailure:) atIndex:0];
+
+                [controller viewDidAppear:NO];
+
+                successBlock = spy.argument;
+            });
+
+            it(@"sets the pants", ^{
+                successBlock(pants);
+
+                [[[controller pants] should] equal:pants];
+            });
+
+            it(@"reloads the data in the table view", ^{
+                [[[controller tableView] should] receive:@selector(reloadData)];
+
+                successBlock(pants);
+            });
+
+        });
+
+        describe(@"the failure callback", ^{
+
+            __block void(^failureBlock)(void);
+
+            beforeEach(^{
+                KWCaptureSpy *spy = [pantsService captureArgument:@selector(getPantsWithSuccess:andFailure:) atIndex:1];
+
+                [controller viewDidAppear:NO];
+
+                failureBlock = spy.argument;
+            });
+
+            it(@"makes and shows an alert view", ^{
+                id alertView = [UIAlertView nullMock];
+                [UIAlertView stub:@selector(alloc) andReturn:alertView];
+                [alertView stub:@selector(initWithTitle:message:delegate:cancelButtonTitle:otherButtonTitles:) andReturn:alertView];
+
+                [[alertView should] receive:@selector(initWithTitle:message:delegate:cancelButtonTitle:otherButtonTitles:) withArguments:@"Whoops!", @"No Pants!!", nil, @"Ok", nil];
+                [[alertView should] receive:@selector(show)];
+
+                failureBlock();
+            });
+
+        });
+
 
     });
 
