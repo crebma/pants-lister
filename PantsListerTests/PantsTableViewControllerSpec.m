@@ -52,19 +52,35 @@ describe(@"PantsTableViewController", ^{
             [[theValue(numberOfSections) should] equal:theValue(1)];
         });
 
-        describe(@"should make a cell for each pants", ^{
+        pending(@"should make a cell for each pants", ^{
 
-            it(@"should make a pajamas row", ^{
-                PantsTableViewCell *cell = [PantsTableViewCell nullMock];
-                [PantsTableViewCell stub:@selector(alloc) andReturn:cell];
-                [cell stub:@selector(initWithType:) andReturn:cell];
+            __block PantsTableViewCell *cell;
 
+            beforeEach(^{
                 NSArray *pants = @[makePants(@"pajama"), makePants(@"jeggings"), makePants(@"jeans")];
                 [controller stub:@selector(pants) andReturn:pants];
 
+                cell = [PantsTableViewCell nullMock];
+                [PantsTableViewCell stub:@selector(alloc) andReturn:cell];
+                [cell stub:@selector(initWithType:) andReturn:cell];
+            });
+
+            it(@"should make a pajamas row", ^{
                 [[cell should] receive:@selector(initWithType:) withArguments:@"pajama"];
 
                 [controller tableView:nil cellForRowAtIndexPath:rowInFirstSection(0)];
+            });
+
+            it(@"should make a jeggings row", ^{
+                [[cell should] receive:@selector(initWithType:) withArguments:@"jeggings"];
+
+                [controller tableView:nil cellForRowAtIndexPath:rowInFirstSection(1)];
+            });
+
+            it(@"should make a jeans row", ^{
+                [[cell should] receive:@selector(initWithType:) withArguments:@"jeans"];
+
+                [controller tableView:nil cellForRowAtIndexPath:rowInFirstSection(2)];
             });
 
         });
