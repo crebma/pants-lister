@@ -12,4 +12,5 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *pantsTypeLabel;
 
+- (id)initWithType:(NSString *)type;
 @end

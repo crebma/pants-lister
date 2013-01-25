@@ -26,4 +26,8 @@
     // Configure the view for the selected state
 }
 
+- (id)initWithType:(NSString *)type {
+    return nil;
+}
+
 @end
