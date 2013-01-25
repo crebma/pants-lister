@@ -52,7 +52,7 @@ describe(@"PantsTableViewController", ^{
             [[theValue(numberOfSections) should] equal:theValue(1)];
         });
 
-        pending(@"should make a cell for each pants", ^{
+        describe(@"should make a cell for each pants", ^{
 
             __block UITableViewCell *cell;
 

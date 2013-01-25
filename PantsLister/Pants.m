@@ -13,6 +13,7 @@
     if (self) {
         self.type = type;
     }
+    return self;
 }
 
 @end
