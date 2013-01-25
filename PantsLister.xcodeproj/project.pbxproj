@@ -16,6 +16,7 @@
 		589F033F8D50C3C286F3B52E /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */; };
 		589F0362E4DFCBBF9B199421 /* PLPantsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0499E9BDDD70383ABA26 /* PLPantsSpec.m */; };
 		589F039877065A1336ACAE95 /* PLPants.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0326D1CB5B246EFC90C9 /* PLPants.m */; };
+		589F04A5870D9CABACE1E628 /* PLPantsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F059A40147156D9857647 /* PLPantsService.m */; };
 		589F04FC574BAFD595C2F726 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F056B32881AAC461D40A6 /* main.m */; };
 		589F054CD14E1FAAB2A075EE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F0683D49F5224A77B20AF /* Default-568h@2x.png */; };
 		589F06C76358C4025D7902D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F02A7D2908A51AACE80A4 /* UIKit.framework */; };
@@ -29,11 +30,14 @@
 		589F0D0B65D67934A4095038 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F0AF11B93734FF5B7114C /* Default@2x.png */; };
 		589F0DAC2B1A89E6AAE0CE8D /* PLPantsTableViewCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F02D21D1FEF53A70B26DC /* PLPantsTableViewCellSpec.m */; };
 		589F0E02BC62246D4DEDEDE6 /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */; };
+		589F0E5EE85BF1BE2BF8967C /* PLPantsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F059A40147156D9857647 /* PLPantsService.m */; };
 		589F0F8487385526ABE71B41 /* PLPantsListerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F002EA4C679FD433EE140 /* PLPantsListerTests.m */; };
 		96B7CB2216B3009C005BB520 /* PLPantsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B7CB2116B3009C005BB520 /* PLPantsTableViewCell.m */; };
 		96B7CB2316B3009C005BB520 /* PLPantsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B7CB2116B3009C005BB520 /* PLPantsTableViewCell.m */; };
 		96B7CB2616B300AD005BB520 /* PLPantsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B7CB2516B300AD005BB520 /* PLPantsTableViewCell.xib */; };
 		96B7CB2716B300AD005BB520 /* PLPantsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B7CB2516B300AD005BB520 /* PLPantsTableViewCell.xib */; };
+		96B7CB7216B30F3E005BB520 /* PLPantsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B7CB7116B30F3E005BB520 /* PLPantsTableViewController.xib */; };
+		96B7CB7316B30F3E005BB520 /* PLPantsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B7CB7116B30F3E005BB520 /* PLPantsTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,7 @@
 		589F0499E9BDDD70383ABA26 /* PLPantsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPantsSpec.m; sourceTree = "<group>"; };
 		589F049FEECEB71B30D54317 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		589F056B32881AAC461D40A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		589F059A40147156D9857647 /* PLPantsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPantsService.m; sourceTree = "<group>"; };
 		589F05B83970CAA27F1E1287 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		589F064D555C2DAC9801F921 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		589F0683D49F5224A77B20AF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -73,11 +78,13 @@
 		589F0B485825BB4E2C288C54 /* PantsLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PantsLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589F0B8BE17EEA257B391CCD /* PLPantsTableViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPantsTableViewControllerSpec.m; sourceTree = "<group>"; };
 		589F0DFBB0EDE18BCF7D1385 /* PantsListerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "PantsListerTests-Info.plist"; sourceTree = "<group>"; };
+		589F0E2AA063230BC6857B91 /* PLPantsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPantsService.h; sourceTree = "<group>"; };
 		589F0E5E1F1B67BE04020B3F /* PantsListerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PantsListerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8937F08BCE45408AB702D638 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B7CB2016B3009C005BB520 /* PLPantsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPantsTableViewCell.h; sourceTree = "<group>"; };
 		96B7CB2116B3009C005BB520 /* PLPantsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPantsTableViewCell.m; sourceTree = "<group>"; };
 		96B7CB2516B300AD005BB520 /* PLPantsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PLPantsTableViewCell.xib; sourceTree = "<group>"; };
+		96B7CB7116B30F3E005BB520 /* PLPantsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PLPantsTableViewController.xib; sourceTree = "<group>"; };
 		EFA1B6216CFE43CDA6AA32C8 /* libPods-PantsListerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PantsListerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +162,9 @@
 				96B7CB2016B3009C005BB520 /* PLPantsTableViewCell.h */,
 				96B7CB2116B3009C005BB520 /* PLPantsTableViewCell.m */,
 				96B7CB2516B300AD005BB520 /* PLPantsTableViewCell.xib */,
+				96B7CB7116B30F3E005BB520 /* PLPantsTableViewController.xib */,
+				589F059A40147156D9857647 /* PLPantsService.m */,
+				589F0E2AA063230BC6857B91 /* PLPantsService.h */,
 			);
 			path = PantsLister;
 			sourceTree = "<group>";
@@ -267,6 +277,7 @@
 				589F0D0B65D67934A4095038 /* Default@2x.png in Resources */,
 				589F054CD14E1FAAB2A075EE /* Default-568h@2x.png in Resources */,
 				96B7CB2616B300AD005BB520 /* PLPantsTableViewCell.xib in Resources */,
+				96B7CB7216B30F3E005BB520 /* PLPantsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +287,7 @@
 			files = (
 				589F080AD894C6EB088C66F0 /* InfoPlist.strings in Resources */,
 				96B7CB2716B300AD005BB520 /* PLPantsTableViewCell.xib in Resources */,
+				96B7CB7316B30F3E005BB520 /* PLPantsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +347,7 @@
 				589F09DD1E73DEEE8A51D7E6 /* PLPantsTableViewController.m in Sources */,
 				589F00A7FFD825AEBA1700E9 /* PLPants.m in Sources */,
 				96B7CB2216B3009C005BB520 /* PLPantsTableViewCell.m in Sources */,
+				589F04A5870D9CABACE1E628 /* PLPantsService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +362,7 @@
 				589F0362E4DFCBBF9B199421 /* PLPantsSpec.m in Sources */,
 				589F0DAC2B1A89E6AAE0CE8D /* PLPantsTableViewCellSpec.m in Sources */,
 				589F0E02BC62246D4DEDEDE6 /* PLAppDelegate.m in Sources */,
+				589F0E5EE85BF1BE2BF8967C /* PLPantsService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

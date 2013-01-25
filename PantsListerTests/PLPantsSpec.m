@@ -6,11 +6,7 @@
 #import "Kiwi.h"
 #import "PLPants.h"
 
-SPEC_BEGIN(PantsSpec)
-
-PLPantsSpec
-
-PLPantsSpec
+SPEC_BEGIN(PLPantsSpec)
 
 describe(@"PLPants", ^{
 

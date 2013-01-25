@@ -10,12 +10,8 @@
 
 @implementation PLPantsTableViewCell
 
-- (id)initWithType:(NSString *)type {
-    self = [super init];
-    if (self) {
-        [self.pantsTypeLabel setText:type];
-    }
-    return self;
+- (void)setType:(NSString *) pantsType {
+    self.pantsTypeLabel.text = pantsType;
 }
 
 @end

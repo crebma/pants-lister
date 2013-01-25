@@ -6,6 +6,7 @@
 #import "PLPantsTableViewController.h"
 #import "PLPants.h"
 #import "PLPantsTableViewCell.h"
+#import "PLPantsService.h"
 
 @interface PLPantsTableViewController ()
 
@@ -13,11 +14,7 @@
 
 @end
 
-SPEC_BEGIN(PantsTableViewControllerSpec)
-
-PLPantsTableViewControllerSpec
-
-PLPantsTableViewControllerSpec
+SPEC_BEGIN(PLPantsTableViewControllerSpec)
 
 PLPants *(^makePants)(NSString *) = ^(NSString *type) {
     return [[PLPants alloc] initWithType:type];
@@ -56,9 +53,10 @@ describe(@"PLPantsTableViewController", ^{
             [[theValue(numberOfSections) should] equal:theValue(1)];
         });
 
-        pending(@"should make a cell for each pants", ^{
+        describe(@"should make a cell for each pants", ^{
 
             __block PLPantsTableViewCell *cell;
+            __block UITableView *tableView;
 
             beforeEach(^{
                 NSArray *pants = @[makePants(@"pajama"), makePants(@"jeggings"), makePants(@"jeans")];
@@ -67,26 +65,62 @@ describe(@"PLPantsTableViewController", ^{
                 cell = [PLPantsTableViewCell nullMock];
                 [PLPantsTableViewCell stub:@selector(alloc) andReturn:cell];
                 [cell stub:@selector(initWithType:) andReturn:cell];
+
+                tableView = [UITableView nullMock];
+                [tableView stub:@selector(dequeueReusableCellWithIdentifier:) andReturn:cell];
+            });
+
+            it(@"should dequeue a reusable cell!", ^{
+                [[tableView should] receive:@selector(dequeueReusableCellWithIdentifier:) withArguments:PLPantsTableViewCellId];
+
+                [controller tableView:tableView cellForRowAtIndexPath:rowInFirstSection(0)];
+            });
+
+            it(@"should return the reusable cell!", ^{
+                UITableViewCell *actualCell = [controller tableView:tableView cellForRowAtIndexPath:rowInFirstSection(0)];
+
+                [[actualCell should] equal:cell];
             });
 
             it(@"should make a pajamas row", ^{
-                [[cell should] receive:@selector(initWithType:) withArguments:@"pajama"];
+                [[cell should] receive:@selector(setType:) withArguments:@"pajama"];
 
-                [controller tableView:nil cellForRowAtIndexPath:rowInFirstSection(0)];
+                [controller tableView:tableView cellForRowAtIndexPath:rowInFirstSection(0)];
             });
 
             it(@"should make a jeggings row", ^{
-                [[cell should] receive:@selector(initWithType:) withArguments:@"jeggings"];
+                [[cell should] receive:@selector(setType:) withArguments:@"jeggings"];
 
-                [controller tableView:nil cellForRowAtIndexPath:rowInFirstSection(1)];
+                [controller tableView:tableView cellForRowAtIndexPath:rowInFirstSection(1)];
             });
 
             it(@"should make a jeans row", ^{
-                [[cell should] receive:@selector(initWithType:) withArguments:@"jeans"];
+                [[cell should] receive:@selector(setType:) withArguments:@"jeans"];
 
-                [controller tableView:nil cellForRowAtIndexPath:rowInFirstSection(2)];
+                [controller tableView:tableView cellForRowAtIndexPath:rowInFirstSection(2)];
             });
 
+            it(@"should make a new row if there is none to dequeue", ^{
+                [tableView stub:@selector(dequeueReusableCellWithIdentifier:) andReturn:nil];
+
+                UITableViewCell *actualCell = [controller tableView:tableView cellForRowAtIndexPath:rowInFirstSection(2)];
+
+                [[actualCell should] beNonNil];
+            });
+
+        });
+
+    });
+
+    pending(@"should get data on viewDidAppear", ^{
+
+        it(@"should get data from the service", ^{
+            id pantsService = [PLPantsService nullMock];
+            [controller stub:@selector(pantsService) andReturn:pantsService];
+
+            [controller viewDidAppear:NO];
+
+            [[pantsService should] receive:@selector(getPantsWithSuccess:andFailure:)];
         });
 
     });

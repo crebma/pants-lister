@@ -22,7 +22,17 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PLPants *pants = [self.pants objectAtIndex:indexPath.row];
 
-    return [[PLPantsTableViewCell alloc] initWithType: pants.type];
+    PLPantsTableViewCell *tableViewCell = [self getCell:tableView];
+    [tableViewCell setType:pants.type];
+    return tableViewCell;
+}
+
+- (PLPantsTableViewCell *)getCell:(UITableView *)tableView {
+    PLPantsTableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:PLPantsTableViewCellId];
+    if (tableViewCell == nil) {
+        tableViewCell = [[[NSBundle mainBundle] loadNibNamed:@"PLPantsTableViewCell" owner:self options:nil] objectAtIndex:0];
+    }
+    return tableViewCell;
 }
 
 @end

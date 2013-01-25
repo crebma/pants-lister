@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#define PLPantsTableViewCellId @"PLPantsTableViewCellId"
+
 @interface PLPantsTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *pantsTypeLabel;
 
-- (id)initWithType:(NSString *)type;
+- (void)setType:(NSString *)pantsType;
 
 @end

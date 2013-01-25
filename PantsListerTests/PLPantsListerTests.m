@@ -8,11 +8,7 @@
 
 #import "Kiwi.h"
 
-SPEC_BEGIN(PantsListerTests)
-
-PLPantsListerTests
-
-PLPantsListerTests
+SPEC_BEGIN(PLPantsListerTests)
 
 describe(@"PantsLister", ^{
     

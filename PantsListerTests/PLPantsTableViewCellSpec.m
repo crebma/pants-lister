@@ -5,15 +5,11 @@
 #import "Kiwi.h"
 #import "PLPantsTableViewCell.h"
 
-SPEC_BEGIN(PantsTableViewCellSpec)
-
-PLPantsTableViewCellSpec
-
-PLPantsTableViewCellSpec
+SPEC_BEGIN(PLPantsTableViewCellSpec)
 
 describe(@"PantsTableView", ^{
 
-    it(@"should set the label text to the type it is inited with", ^{
+    it(@"should set the label text to the type that is set", ^{
         PLPantsTableViewCell *cell = [[PLPantsTableViewCell alloc] init];
         id label = [UILabel nullMock];
         [cell stub:@selector(pantsTypeLabel) andReturn:label];
@@ -21,7 +17,7 @@ describe(@"PantsTableView", ^{
 
         [[label should] receive:@selector(setText:) withArguments:type];
 
-        [cell initWithType:type];
+        [cell setType:type];
     });
 
 });
