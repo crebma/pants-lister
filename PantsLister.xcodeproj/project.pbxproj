@@ -14,6 +14,7 @@
 		589F02DB739C61EB43A31BA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F049FEECEB71B30D54317 /* CoreGraphics.framework */; };
 		589F02F573E79BE7069D5D93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F02A7D2908A51AACE80A4 /* UIKit.framework */; };
 		589F033F8D50C3C286F3B52E /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */; };
+		589F0362E4DFCBBF9B199421 /* PantsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0499E9BDDD70383ABA26 /* PantsSpec.m */; };
 		589F039877065A1336ACAE95 /* Pants.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0326D1CB5B246EFC90C9 /* Pants.m */; };
 		589F04FC574BAFD595C2F726 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F056B32881AAC461D40A6 /* main.m */; };
 		589F054CD14E1FAAB2A075EE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F0683D49F5224A77B20AF /* Default-568h@2x.png */; };
@@ -53,6 +54,7 @@
 		589F01CAFFCF7A33A7AF02E2 /* Pants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pants.h; sourceTree = "<group>"; };
 		589F02A7D2908A51AACE80A4 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		589F0326D1CB5B246EFC90C9 /* Pants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pants.m; sourceTree = "<group>"; };
+		589F0499E9BDDD70383ABA26 /* PantsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PantsSpec.m; sourceTree = "<group>"; };
 		589F049FEECEB71B30D54317 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		589F056B32881AAC461D40A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		589F05B83970CAA27F1E1287 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				589F05A84F71A329D4B17F87 /* Supporting Files */,
 				589F002EA4C679FD433EE140 /* PantsListerTests.m */,
 				589F0B8BE17EEA257B391CCD /* PantsTableViewControllerSpec.m */,
+				589F0499E9BDDD70383ABA26 /* PantsSpec.m */,
 			);
 			path = PantsListerTests;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				589F0A34013E19FDAFC78661 /* PantsTableViewControllerSpec.m in Sources */,
 				589F039877065A1336ACAE95 /* Pants.m in Sources */,
 				96B7CB2316B3009C005BB520 /* PantsTableViewCell.m in Sources */,
+				589F0362E4DFCBBF9B199421 /* PantsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
