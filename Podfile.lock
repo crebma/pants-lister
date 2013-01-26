@@ -2,13 +2,16 @@
 PODS:
 - AFNetworking (1.1.0)
 - Kiwi (1.1.0)
+- OHHTTPStubs (1.1.1)
 
 DEPENDENCIES:
 - AFNetworking (~> 1.0RC1)
 - Kiwi
+- OHHTTPStubs
 
 SPEC CHECKSUMS:
   AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
   Kiwi: 9141d15cf4f52a2178139ea16722f021b4059906
+  OHHTTPStubs: cb1cef742f2fba18b192fb92ede52a69cf3a04d5
 
 COCOAPODS: 0.15.1

@@ -3,4 +3,5 @@ pod 'AFNetworking', '~> 1.0RC1'
 
 target :PantsListerTests do
     pod 'Kiwi'
+    pod 'OHHTTPStubs'
 end

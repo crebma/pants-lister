@@ -17,6 +17,14 @@
 
 @implementation PLPantsTableViewController
 
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(self) {
+        self.pantsService = [[PLPantsService alloc] init];
+    }
+    return self;
+}
+
 -(void)viewDidAppear:(BOOL)animated {
     [self.pantsService getPantsWithSuccess:^(NSArray *pants){
         self.pants = pants;

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C0C2A649BAD4B91A852D1DA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8937F08BCE45408AB702D638 /* libPods.a */; };
 		3D2D52E6160B42F39FEC5AD0 /* libPods-PantsListerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1B6216CFE43CDA6AA32C8 /* libPods-PantsListerTests.a */; };
+		589F0079203B0E139CB3ADD5 /* PLURLRequestProviderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F03F9E3C230859995B590 /* PLURLRequestProviderSpec.m */; };
 		589F00A7FFD825AEBA1700E9 /* PLPants.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0326D1CB5B246EFC90C9 /* PLPants.m */; };
 		589F00CA4E15D7C3AE2D1D45 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F08EF36F07D57C1DE4DDB /* Default.png */; };
 		589F02DB739C61EB43A31BA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F049FEECEB71B30D54317 /* CoreGraphics.framework */; };
@@ -28,9 +29,12 @@
 		589F0A34013E19FDAFC78661 /* PLPantsTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0B8BE17EEA257B391CCD /* PLPantsTableViewControllerSpec.m */; };
 		589F0AD737D46C1453523A41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589F076485F2A67878F505A7 /* Foundation.framework */; };
 		589F0D0B65D67934A4095038 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 589F0AF11B93734FF5B7114C /* Default@2x.png */; };
+		589F0D3D3196698701761927 /* PLURLRequestProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F076C32F5485773A6EA04 /* PLURLRequestProvider.m */; };
 		589F0DAC2B1A89E6AAE0CE8D /* PLPantsTableViewCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F02D21D1FEF53A70B26DC /* PLPantsTableViewCellSpec.m */; };
+		589F0DF4B1A48E9426301BD5 /* PLURLRequestProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F076C32F5485773A6EA04 /* PLURLRequestProvider.m */; };
 		589F0E02BC62246D4DEDEDE6 /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F00A4FAE34ED564B39B2E /* PLAppDelegate.m */; };
 		589F0E5EE85BF1BE2BF8967C /* PLPantsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F059A40147156D9857647 /* PLPantsService.m */; };
+		589F0EBA60553AB13339E4F7 /* PLPantsServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0EFD1D655B37BB3BF5A1 /* PLPantsServiceSpec.m */; };
 		589F0F8487385526ABE71B41 /* PLPantsListerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F002EA4C679FD433EE140 /* PLPantsListerTests.m */; };
 		96B7CB2216B3009C005BB520 /* PLPantsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B7CB2116B3009C005BB520 /* PLPantsTableViewCell.m */; };
 		96B7CB2316B3009C005BB520 /* PLPantsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B7CB2116B3009C005BB520 /* PLPantsTableViewCell.m */; };
@@ -60,7 +64,9 @@
 		589F01CAFFCF7A33A7AF02E2 /* PLPants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPants.h; sourceTree = "<group>"; };
 		589F02A7D2908A51AACE80A4 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		589F02D21D1FEF53A70B26DC /* PLPantsTableViewCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPantsTableViewCellSpec.m; sourceTree = "<group>"; };
+		589F02E9E4A7E14DC3BB98B3 /* PLURLRequestProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLURLRequestProvider.h; sourceTree = "<group>"; };
 		589F0326D1CB5B246EFC90C9 /* PLPants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPants.m; sourceTree = "<group>"; };
+		589F03F9E3C230859995B590 /* PLURLRequestProviderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLURLRequestProviderSpec.m; sourceTree = "<group>"; };
 		589F0499E9BDDD70383ABA26 /* PLPantsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPantsSpec.m; sourceTree = "<group>"; };
 		589F049FEECEB71B30D54317 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		589F056B32881AAC461D40A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 		589F064D555C2DAC9801F921 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		589F0683D49F5224A77B20AF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		589F076485F2A67878F505A7 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		589F076C32F5485773A6EA04 /* PLURLRequestProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLURLRequestProvider.m; sourceTree = "<group>"; };
 		589F077DFD63CA431B32D20F /* PLPantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPantsTableViewController.m; sourceTree = "<group>"; };
 		589F08062E69E6186CECC1EC /* PLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAppDelegate.h; sourceTree = "<group>"; };
 		589F0814C48CD2837E03262F /* PantsLister-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PantsLister-Prefix.pch"; sourceTree = "<group>"; };
@@ -80,6 +87,7 @@
 		589F0DFBB0EDE18BCF7D1385 /* PantsListerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "PantsListerTests-Info.plist"; sourceTree = "<group>"; };
 		589F0E2AA063230BC6857B91 /* PLPantsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPantsService.h; sourceTree = "<group>"; };
 		589F0E5E1F1B67BE04020B3F /* PantsListerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PantsListerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		589F0EFD1D655B37BB3BF5A1 /* PLPantsServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPantsServiceSpec.m; sourceTree = "<group>"; };
 		8937F08BCE45408AB702D638 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B7CB2016B3009C005BB520 /* PLPantsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPantsTableViewCell.h; sourceTree = "<group>"; };
 		96B7CB2116B3009C005BB520 /* PLPantsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPantsTableViewCell.m; sourceTree = "<group>"; };
@@ -122,6 +130,8 @@
 				589F0B8BE17EEA257B391CCD /* PLPantsTableViewControllerSpec.m */,
 				589F0499E9BDDD70383ABA26 /* PLPantsSpec.m */,
 				589F02D21D1FEF53A70B26DC /* PLPantsTableViewCellSpec.m */,
+				589F0EFD1D655B37BB3BF5A1 /* PLPantsServiceSpec.m */,
+				589F03F9E3C230859995B590 /* PLURLRequestProviderSpec.m */,
 			);
 			path = PantsListerTests;
 			sourceTree = "<group>";
@@ -165,6 +175,8 @@
 				96B7CB7116B30F3E005BB520 /* PLPantsTableViewController.xib */,
 				589F059A40147156D9857647 /* PLPantsService.m */,
 				589F0E2AA063230BC6857B91 /* PLPantsService.h */,
+				589F076C32F5485773A6EA04 /* PLURLRequestProvider.m */,
+				589F02E9E4A7E14DC3BB98B3 /* PLURLRequestProvider.h */,
 			);
 			path = PantsLister;
 			sourceTree = "<group>";
@@ -348,6 +360,7 @@
 				589F00A7FFD825AEBA1700E9 /* PLPants.m in Sources */,
 				96B7CB2216B3009C005BB520 /* PLPantsTableViewCell.m in Sources */,
 				589F04A5870D9CABACE1E628 /* PLPantsService.m in Sources */,
+				589F0DF4B1A48E9426301BD5 /* PLURLRequestProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +376,9 @@
 				589F0DAC2B1A89E6AAE0CE8D /* PLPantsTableViewCellSpec.m in Sources */,
 				589F0E02BC62246D4DEDEDE6 /* PLAppDelegate.m in Sources */,
 				589F0E5EE85BF1BE2BF8967C /* PLPantsService.m in Sources */,
+				589F0EBA60553AB13339E4F7 /* PLPantsServiceSpec.m in Sources */,
+				589F0079203B0E139CB3ADD5 /* PLURLRequestProviderSpec.m in Sources */,
+				589F0D3D3196698701761927 /* PLURLRequestProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
